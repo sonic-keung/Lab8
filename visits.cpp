@@ -21,14 +21,14 @@ void Visit::readFile() {
 
 // display file alphabetically by name
 void Visit::print() {
-    for (auto it = peopleMap.begin(); it != peopleMap.end(); ++it){
+    for (auto it = peopleMap.begin(); it != peopleMap.end(); it++){
         cout << it->first << endl;
     }
 }
 
 // display people who visited Krusty-Burger and Tavern only
 void Visit::visitKBandT() {
-    for (auto it = peopleMap.begin(); it != peopleMap.end(); ++it) {
+    for (auto it = peopleMap.begin(); it != peopleMap.end(); it++) {
         vector<string> visits = it->second;
         string sChar = it->first;
 
@@ -42,7 +42,7 @@ void Visit::visitKBandT() {
 
 // display people who did not visit Krusty-Burger and home only
 void Visit::visitNotKBNotHome() {
-    for (auto it = peopleMap.begin(); it != peopleMap.end(); ++it) {
+    for (auto it = peopleMap.begin(); it != peopleMap.end(); it++) {
         vector<string> visits = it->second;
         string sChar = it->first;
 
@@ -56,7 +56,7 @@ void Visit::visitNotKBNotHome() {
 
 // display people who visited Krusty-Burger but not Tavern and Home only
 void Visit::visitKBvSNotTNotH() {
-    for (auto it = peopleMap.begin(); it != peopleMap.end(); ++it) {
+    for (auto it = peopleMap.begin(); it != peopleMap.end(); it++) {
         vector<string> visits = it->second;
         string sChar = it->first;
 
