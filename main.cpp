@@ -1,11 +1,7 @@
-#include <iostream>
-#include <fstream>
-#include <algorithm>
-#include <map>
-#include <string>
-#include <vector>
 #include "visits.hpp"
+
 using namespace std;
+
 int main() {
     Visit v;
 
